@@ -488,3 +488,23 @@ img {
 .collection .section-subtitle {
   margin-bottom: 8px;
 }
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.section-team .section-text {
+  margin-bottom: 8px;
+}
