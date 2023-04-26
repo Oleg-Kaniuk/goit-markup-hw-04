@@ -18,6 +18,7 @@
   --primary-accent-color: #404bbf;
   --secondary-accent-color: #ffffff;
   --default-accent-color: #8e8f99;
+  --default-icons-color: #f4f4fd;
 }
 
 body {
@@ -77,6 +78,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .menu-link {
@@ -298,8 +301,8 @@ img {
 .card-content {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
   text-align: center;
 }
 
@@ -309,7 +312,6 @@ img {
 
 .section-features .section-subtitle {
   margin-bottom: 8px;
-  margin-top: 8px;
 }
 
 /* =========================================================
@@ -319,7 +321,7 @@ img {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
 
   letter-spacing: 0.02em;
   text-align: center;
@@ -354,8 +356,6 @@ img {
 .section-team .section-text {
   font-size: 16px;
   line-height: 1.5;
-
-  /* color: var(--primary-text-color); */
 }
 
 .section.team {
@@ -475,7 +475,11 @@ img {
   margin-bottom: 48px;
 }
 
-.collection-item:hover {
+.collection-link {
+  display: block;
+}
+.collection-link:hover,
+.collection-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -499,8 +503,9 @@ img {
   align-items: center;
   width: 264px;
   height: 112px;
-  background: #f4f4fd;
+  background-color: #f4f4fd;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 .company-list {
   display: flex;
@@ -546,12 +551,22 @@ img {
   background-color: #4d5ae5;
 }
 
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--primary-accent-color);
+}
+
+.social-list-icon {
+  fill: var(--default-icons-color);
+}
+
 .section-team .section-text {
   margin-bottom: 8px;
 }
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .webstudio-container {
@@ -561,7 +576,7 @@ img {
 .media-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .media-list-link {
@@ -577,6 +592,10 @@ img {
 .media-list-link:hover,
 .media-list-link:focus {
   background-color: #31d0aa;
+}
+
+.media-list-icon {
+  fill: var(--default-icons-color);
 }
 
 .media-container .media-text {
