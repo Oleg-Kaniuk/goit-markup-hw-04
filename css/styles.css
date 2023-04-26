@@ -72,8 +72,9 @@ img {
 }
 
 .header-page {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -179,7 +180,18 @@ img {
 ====================================================================================================== */
 
 .hero {
-  background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/img-name.jpg);
+  background-color: rgba(46, 47, 66, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -238,6 +250,9 @@ img {
 ====================================================================================================== */
 
 .section {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 120px;
 }
 .section.features,
@@ -362,6 +377,9 @@ img {
 
 .footer {
   background-color: var(--secondary-bg-color);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
