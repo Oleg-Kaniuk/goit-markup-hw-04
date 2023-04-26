@@ -17,6 +17,7 @@
   --secondary-bg-color: #2e2f42;
   --primary-accent-color: #404bbf;
   --secondary-accent-color: #ffffff;
+  --default-accent-color: #8e8f99;
 }
 
 body {
@@ -77,11 +78,6 @@ img {
   margin-right: auto;
   border-bottom: 1px solid #e7e9fc;
 }
-
-/* .menu .link {
-  padding-top: 24px;
-  padding-bottom: 24px;
-} */
 
 .menu-link {
   display: inline-block;
@@ -241,10 +237,6 @@ img {
   background-color: var(--primary-accent-color);
 }
 
-/* .modal-button:active {
-  background-color: var(--primary-accent-color);
-} */
-
 /* ======================================================================================================
 ========================================    OTHER SECTION      ==========================================
 ====================================================================================================== */
@@ -309,7 +301,6 @@ img {
   padding-left: 16px;
   padding-right: 16px;
   text-align: center;
-  /* border-radius: 0px 0px 4px 4px; */
 }
 
 .section-team .section-subtitle {
@@ -404,14 +395,6 @@ img {
 ========================================    PORTFOLIO      ==============================================
 ====================================================================================================== */
 
-/* .portfolio-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-
-  color: #ffffff;
-} */
-
 .filter .filter-button {
   font-family: inherit;
   font-weight: 500;
@@ -462,10 +445,6 @@ img {
   margin-bottom: 72px;
 }
 
-/* .filter-item {
-  margin-bottom: 72px;
-} */
-
 .filter-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -501,14 +480,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* .collection > .collection-item {
-  flex-basis: calc((100% - 48px) / 3);
-} */
-
-/* .collection-item {
-  border-bottom: 1px solid #e7e9fc;
-} */
-
 .card-info {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -543,16 +514,16 @@ img {
   align-items: center;
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--default-accent-color);
   border-radius: 4px;
-  color: #8e8f99;
+  color: var(--default-accent-color);
 }
 
 .company-list-link:hover,
 .company-list-link:focus {
-  border: 1px solid #404bbf;
+  border: 1px solid var(--primary-accent-color);
   border-radius: 4px;
-  color: #404bbf;
+  color: var(--primary-accent-color);
 }
 
 .company-list-icon {
@@ -579,14 +550,37 @@ img {
   margin-bottom: 8px;
 }
 
-.media-container {
+.footer-container {
   display: flex;
+}
+
+.webstudio-container {
+  margin-right: 120px;
 }
 
 .media-list {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+
+.media-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.media-list-link:hover,
+.media-list-link:focus {
+  background-color: #31d0aa;
+}
+
+.media-container .media-text {
+  margin-bottom: 16px;
 }
 
 .media-text {
